@@ -1,0 +1,50 @@
+{
+  "asset": {
+    "version": "1.0"
+  },
+  "geometricError": 500,
+  "root": {
+    "boundingVolume": {
+      "region": [
+        -1.3293220644766708,
+        0.6812386215563195,
+        -1.265932782753024,
+        0.734612866256626,
+        0,
+        100
+  ]
+    },
+    "geometricError": 500,
+    "refine": "ADD",
+    "children": [
+      {
+        "boundingVolume": {
+          "region": [
+              -1.268947589209415,
+              0.7312472494493873,
+              -1.265932782753024,
+              0.733612866256626,
+              0,
+              100
+          ]
+        },
+        "geometricError": 500,
+        "content": {
+          "uri": "Connecticut/tileset.json"
+        }
+      },
+      {
+        "boundingVolume": {
+          "box": [
+          1238070.0029833354,-4795867.907504121,4006102.3617460253,6813.593873352278,0,0,0,4585.98895232752,0,0,0,6077.698247526074
+          ]
+          },
+        "geometricError": 500,
+        "content": {
+          "uri": "delaware/tileset.json"
+        }
+      }
+
+    ]
+  }
+}

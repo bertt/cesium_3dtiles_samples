@@ -7,3 +7,9 @@ Sample with 3D Tiles and Cesium
 https://bertt.github.io/cesium_3dtiles_samples/samples/animations
 
 Note: Animations not working yet
+
+- External
+
+Demo of external tilesets
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/external

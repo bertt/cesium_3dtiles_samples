@@ -1,0 +1,38 @@
+{
+    "asset": {
+      "version": "1.0"
+    },
+    "geometricError": 500,
+    "root": {
+      "boundingVolume": {
+        "region": [
+          -1.268947589209415,
+          0.733612866256626,
+          -1.265932782753024,
+          0.7312472494493873,
+          0,
+          20
+        ]
+      },
+      "geometricError": 200,
+      "refine": "ADD",
+      "children": [
+        {
+          "boundingVolume": {
+            "region": [
+                -1.268947589209415,
+                0.733612866256626,
+                -1.265932782753024,
+                0.7312472494493873,
+                0,
+                20
+            ]
+          },
+          "geometricError": 70,
+          "content": {
+            "uri": "Connecticut/tileset.json"
+          }
+        }
+      ]
+    }
+  }
