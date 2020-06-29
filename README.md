@@ -13,3 +13,9 @@ Note: Animations not working yet
 Demo of external tilesets
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/external
+
+- Instanced
+
+Demo of instanced 3D Tiles
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/instanced
