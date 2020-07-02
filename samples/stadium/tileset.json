@@ -1,0 +1,23 @@
+{
+  "asset": {
+    "version": "1.0"
+  },
+  "geometricError": 100,
+  "root": {
+      "boundingVolume": {
+      "region": [
+        0.08617817999792791, 0.9130190119510563,0.08635636066126402, 0.9130813376586451,0,20
+      ]
+      },
+      "geometricError": 0,
+      "content": {
+      "uri": "test1.i3dm"
+      }
+  },
+  "properties": {
+    "Height": {
+      "minimum": 20,
+      "maximum": 20
+    }
+  }
+}
