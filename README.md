@@ -18,6 +18,8 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/external
 
 Demo of instanced 3D Tiles
 
-https://bertt.github.io/cesium_3dtiles_samples/samples/instanced
+To east rotated seat in i3dm: https://bertt.github.io/cesium_3dtiles_samples/samples/instanced/index_east.html
+
+To north rotated seat in i3dm: https://bertt.github.io/cesium_3dtiles_samples/samples/instanced/index_north.html
 
 
