@@ -18,6 +18,10 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/external
 
 Demo of instanced 3D Tiles
 
+Traffic lights in Amsterdam: https://bertt.github.io/cesium_3dtiles_samples/samples/instanced/traffic_lights/
+
+Rotation tests:
+
 To east rotated seat in i3dm: https://bertt.github.io/cesium_3dtiles_samples/samples/instanced/index_east.html
 
 To north rotated seat in i3dm: https://bertt.github.io/cesium_3dtiles_samples/samples/instanced/index_north.html
