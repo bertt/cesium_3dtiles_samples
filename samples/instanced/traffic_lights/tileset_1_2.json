@@ -847,7 +847,6 @@
       ]
     }
   },
-  "geometricError": 0.0,
   "asset": {
     "generator": "i3dm.export",
     "version": "1.0"
