@@ -2,6 +2,10 @@
 
 Sample with 3D Tiles and Cesium
 
+- Batched b3dm sample
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/b3dm
+
 - Animations
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/animations
