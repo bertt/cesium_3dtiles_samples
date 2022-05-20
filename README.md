@@ -1,5 +1,11 @@
 # cesium_samples
 
+3D Tiles 1.1/Next sample:
+
+- Houses, trees with metadata
+
+https://github.com/bertt/cesium_3dtiles_samples/tree/master/samples/1.1/MetadataGranularities
+
 Sample with 3D Tiles and Cesium
 
 - Batched b3dm sample
