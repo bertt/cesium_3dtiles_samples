@@ -4,7 +4,7 @@
 
 - Houses, trees with metadata
 
-https://github.com/bertt/cesium_3dtiles_samples/tree/master/samples/1.1/MetadataGranularities
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/MetadataGranularities/
 
 Sample with 3D Tiles and Cesium
 
