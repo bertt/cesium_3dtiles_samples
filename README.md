@@ -12,6 +12,10 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/MetadataGranularities
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/b3dm
 
+- Sparse Implicit quadtree
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/SparseImplicitQuadtree
+
 ## 3D Tiles 1.0 samples:
 
 Sample with 3D Tiles and Cesium
