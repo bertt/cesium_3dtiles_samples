@@ -1,9 +1,20 @@
 {
+  "buffers": [
+    {
+      "name": "Availability Buffer",
+      "uri": "availability.bin",
+      "byteLength": 8
+    }
+  ],
+ "bufferViews": [
+    { "buffer": 0, "byteOffset": 0, "byteLength": 43 }
+  ],
   "tileAvailability": {
     "constant": 1
   },
   "contentAvailability": {
-    "constant": 1
+    "bitstream": 0,
+    "availableCount": 60
   },
   "childSubtreeAvailability": {
     "constant": 0
