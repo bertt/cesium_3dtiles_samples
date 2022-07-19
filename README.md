@@ -1,6 +1,6 @@
 # cesium_samples
 
-## 3D Tiles 1.1/Next samples:
+## 3D Tiles 1.1 samples:
 
 - Delaware
 
