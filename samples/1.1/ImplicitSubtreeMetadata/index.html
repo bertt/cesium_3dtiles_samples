@@ -1,12 +1,13 @@
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <script src="https://cesium.com/downloads/cesiumjs/releases/1.95/Build/Cesium/Cesium.js"></script>
-  <link href="https://cesium.com/downloads/cesiumjs/releases/1.95/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
-  
+    <meta charset="utf-8">
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.95/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.95/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+
     <style>
-      html, body, #cesiumContainer {
+        html, body, #cesiumContainer {
             width: 100%;
             height: 100%;
             margin: 0;
@@ -20,11 +21,11 @@
             top: 5px;
             left: 5px;
         }
-  </style>
+    </style>
 </head>
 <body>
-  <div id="cesiumContainer"></div>
-  <script>
+    <div id="cesiumContainer"></div>
+    <script>
     Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiNDc1ZjQwMS1hOGI2LTQyNmUtYmYxMi1jODlhNDNlMjViZTkiLCJpZCI6NDc4OSwic2NvcGVzIjpbImFzciIsImdjIl0sImlhdCI6MTU0MTYyNTg3OX0.mNoGLdYuwqsnRRkQtdYNMbJfMBoZF2hPkbc4SRVVqNw';
     const viewer = new Cesium.Viewer("cesiumContainer");
 
@@ -32,13 +33,13 @@
 // to a certain position on the globe
 const tileset = viewer.scene.primitives.add(
   new Cesium.Cesium3DTileset({
-    url: "tileset.json",
+    url: "tileset_1.1.json",
     debugShowBoundingVolume: true,
   })
 );
-tileset.modelMatrix = Cesium.Transforms.eastNorthUpToFixedFrame(
-  Cesium.Cartesian3.fromDegrees(-75.152325, 39.94704, 0.0)
-);
+//tileset.modelMatrix = Cesium.Transforms.eastNorthUpToFixedFrame(
+//  Cesium.Cartesian3.fromDegrees(-75.152325, 39.94704, 0.0)
+//);
 
 // Create an HTML element that will serve as the
 // tooltip that displays the metadata information
@@ -117,6 +118,6 @@ const offset = new Cesium.HeadingPitchRange(
   80.0
 );
 viewer.zoomTo(tileset, offset);
-  </script>
+    </script>
 </body>
 </html>
