@@ -25,13 +25,6 @@
     "content": {
       "uri": "content/test_{level}_{x}_{y}.glb"
     },
-    "implicitTiling": {
-      "subdivisionScheme": "QUADTREE",
-      "subtreeLevels": 5,
-      "subtrees": {
-        "uri": "subtrees/{level}_{x}_{y}.subtree"
-      }
-    },
     "transform": [
       1.0,
       0.0,
