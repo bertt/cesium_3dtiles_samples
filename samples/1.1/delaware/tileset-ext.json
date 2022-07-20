@@ -3,6 +3,12 @@
     "version" : "1.1"
   },
   "geometricError" : 1024.0,
+  "extensionsUsed": [
+    "3DTILES_implicit_tiling"
+  ],
+  "extensionsRequired": [
+    "3DTILES_implicit_tiling"
+  ],
   "root": {
     "boundingVolume": {
       "box": [
@@ -25,6 +31,15 @@
     "content": {
       "uri": "content/test_{level}_{x}_{y}.glb"
     },
+    "extensions": {
+      "3DTILES_implicit_tiling": {
+        "subdivisionScheme": "QUADTREE",
+        "subtreeLevels": 5,
+        "subtrees": {
+          "uri": "subtrees/{level}_{x}_{y}.subtree"
+        }
+      }  
+    },
     "transform": [
       1.0,
       0.0,
@@ -43,14 +58,5 @@
       4006102.3617460253,
       1.0
     ]
-  },
-  "extensions": {
-    "3DTILES_implicit_tiling": {
-      "subdivisionScheme": "QUADTREE",
-      "subtreeLevels": 5,
-      "subtrees": {
-        "uri": "subtrees/{level}_{x}_{y}.subtree"
-      }
-    }  
   }
 }
