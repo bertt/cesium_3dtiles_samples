@@ -2,10 +2,17 @@
 
 ## 3D Tiles 1.1 samples:
 
+- Teapots galors
+
+Sample of EXT_mesh_gpu_instancing
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/teapots_galore/
+
+![image](https://user-images.githubusercontent.com/538812/180180482-2a1123e4-5027-4986-ad24-c900aed01221.png)
+
 - Delaware
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/delaware
-
 
 - Houses, trees with metadata
 
