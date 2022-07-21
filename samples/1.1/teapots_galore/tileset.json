@@ -13,6 +13,7 @@
     },
     "content": {
       "uri": "./teapots_galore/teapots_galore.gltf"
-    }
+    },
+    "geometricError": 0
   }
 }
