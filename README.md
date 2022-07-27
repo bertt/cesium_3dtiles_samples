@@ -4,11 +4,23 @@
 
 - Teapots galors
 
-Sample of EXT_mesh_gpu_instancing
+Samples of EXT_mesh_gpu_instancing
+
+1] Forest
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/forest/
+
+![image](https://user-images.githubusercontent.com/538812/181376795-c7605697-b6b1-4a8d-930a-634ec341e26c.png)
+
+2] Teapots
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/teapots_galore/
 
 ![image](https://user-images.githubusercontent.com/538812/180180482-2a1123e4-5027-4986-ad24-c900aed01221.png)
+
+3] Random shapes
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/random_shapes/
 
 - Delaware
 
