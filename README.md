@@ -2,23 +2,27 @@
 
 ## 3D Tiles 1.1 samples:
 
-- Teapots galors
-
 Samples of EXT_mesh_gpu_instancing
 
-1] Forest
+1] Trees
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/trees/
+
+![image](https://user-images.githubusercontent.com/538812/181571703-4a29077d-caed-458a-82f7-acec254952a6.png)
+
+2] Forest
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/forest/
 
 ![image](https://user-images.githubusercontent.com/538812/181376795-c7605697-b6b1-4a8d-930a-634ec341e26c.png)
 
-2] Teapots
+3] Teapots
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/teapots_galore/
 
 ![image](https://user-images.githubusercontent.com/538812/180180482-2a1123e4-5027-4986-ad24-c900aed01221.png)
 
-3] Random shapes
+4] Random shapes
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/random_shapes/
 
