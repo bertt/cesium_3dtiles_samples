@@ -6,7 +6,7 @@ Samples of EXT_mesh_gpu_instancing
 
 1] Trees
 
-https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/trees/
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/trees_fixed/
 
 ![image](https://user-images.githubusercontent.com/538812/181571703-4a29077d-caed-458a-82f7-acec254952a6.png)
 
