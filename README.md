@@ -2,27 +2,27 @@
 
 ## 3D Tiles 1.1 samples:
 
-Samples of EXT_mesh_gpu_instancing
+1] Trees - Sample of instanced i3dm/cmpt 3D trees using implicit quadtree
 
-1] Trees
-
-https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/trees_fixed/
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/trees/
 
 ![image](https://user-images.githubusercontent.com/538812/181571703-4a29077d-caed-458a-82f7-acec254952a6.png)
 
-2] Forest
+Samples of EXT_mesh_gpu_instancing
+
+1] Forest
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/forest/
 
 ![image](https://user-images.githubusercontent.com/538812/181376795-c7605697-b6b1-4a8d-930a-634ec341e26c.png)
 
-3] Teapots
+2] Teapots
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/teapots_galore/
 
 ![image](https://user-images.githubusercontent.com/538812/180180482-2a1123e4-5027-4986-ad24-c900aed01221.png)
 
-4] Random shapes
+3] Random shapes
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/random_shapes/
 
