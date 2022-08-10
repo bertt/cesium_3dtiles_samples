@@ -52,6 +52,10 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/ImplicitSubtreeMetada
 
 ## 3D Tiles 1.0 samples:
 
+OpenDroneMap - Obj2Tiles
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/obj2tiles
+
 Sample with 3D Tiles and Cesium
 
 - Batched b3dm sample
