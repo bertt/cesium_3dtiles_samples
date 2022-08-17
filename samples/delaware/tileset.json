@@ -1,0 +1,1304 @@
+{
+  "root": {
+    "children": [
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31937,
+            0.68303,
+            -1.31912,
+            0.68459,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/1.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31932,
+            0.68313,
+            -1.31907,
+            0.68468,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/2.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31927,
+            0.68323,
+            -1.31902,
+            0.68478,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/3.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31927,
+            0.68282,
+            -1.31903,
+            0.68437,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/4.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31922,
+            0.68291,
+            -1.31898,
+            0.68447,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/5.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31917,
+            0.68301,
+            -1.31893,
+            0.68456,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/6.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31912,
+            0.68311,
+            -1.31888,
+            0.68466,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/7.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31907,
+            0.6832,
+            -1.31883,
+            0.68476,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/8.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31918,
+            0.6826,
+            -1.31893,
+            0.68415,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/9.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31913,
+            0.6827,
+            -1.31888,
+            0.68425,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/10.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31908,
+            0.68279,
+            -1.31883,
+            0.68435,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/11.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31903,
+            0.68289,
+            -1.31878,
+            0.68444,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/12.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31898,
+            0.68298,
+            -1.31873,
+            0.68454,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/13.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31893,
+            0.68308,
+            -1.31868,
+            0.68463,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/14.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31898,
+            0.68258,
+            -1.31874,
+            0.68413,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/15.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31893,
+            0.68267,
+            -1.31869,
+            0.68422,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/16.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31888,
+            0.68277,
+            -1.31864,
+            0.68432,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/17.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31883,
+            0.68286,
+            -1.31859,
+            0.68442,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/18.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31878,
+            0.68296,
+            -1.31854,
+            0.68451,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/19.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31873,
+            0.68306,
+            -1.31849,
+            0.68461,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/20.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31894,
+            0.68226,
+            -1.31869,
+            0.68382,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/21.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31889,
+            0.68236,
+            -1.31864,
+            0.68391,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/22.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31884,
+            0.68245,
+            -1.31859,
+            0.68401,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/23.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31879,
+            0.68255,
+            -1.31854,
+            0.6841,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/24.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31874,
+            0.68265,
+            -1.31849,
+            0.6842,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/25.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31869,
+            0.68274,
+            -1.31844,
+            0.6843,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/26.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31864,
+            0.68284,
+            -1.31839,
+            0.68439,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/27.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31859,
+            0.68294,
+            -1.31834,
+            0.68449,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/28.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31854,
+            0.68303,
+            -1.31829,
+            0.68458,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/29.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31874,
+            0.68224,
+            -1.3185,
+            0.68379,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/30.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31869,
+            0.68233,
+            -1.31845,
+            0.68389,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/31.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31864,
+            0.68243,
+            -1.3184,
+            0.68398,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/32.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31859,
+            0.68253,
+            -1.31835,
+            0.68408,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/33.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31854,
+            0.68262,
+            -1.3183,
+            0.68417,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/34.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31849,
+            0.68272,
+            -1.31825,
+            0.68427,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/35.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31844,
+            0.68281,
+            -1.3182,
+            0.68437,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/36.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31839,
+            0.68291,
+            -1.31815,
+            0.68446,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/37.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31855,
+            0.68221,
+            -1.3183,
+            0.68377,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/38.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.3185,
+            0.68231,
+            -1.31825,
+            0.68386,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/39.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31845,
+            0.68241,
+            -1.3182,
+            0.68396,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/40.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.3184,
+            0.6825,
+            -1.31815,
+            0.68405,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/41.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31835,
+            0.6826,
+            -1.3181,
+            0.68415,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/42.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.3183,
+            0.68269,
+            -1.31805,
+            0.68425,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/43.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31825,
+            0.68279,
+            -1.318,
+            0.68434,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/44.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.3182,
+            0.68289,
+            -1.31795,
+            0.68444,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/45.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31835,
+            0.68219,
+            -1.31811,
+            0.68374,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/46.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.3183,
+            0.68228,
+            -1.31806,
+            0.68384,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/47.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31825,
+            0.68238,
+            -1.31801,
+            0.68393,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/48.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.3182,
+            0.68248,
+            -1.31796,
+            0.68403,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/49.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31815,
+            0.68257,
+            -1.31791,
+            0.68413,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/50.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.3181,
+            0.68267,
+            -1.31786,
+            0.68422,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/51.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31805,
+            0.68276,
+            -1.3178,
+            0.68432,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/52.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.318,
+            0.68286,
+            -1.31775,
+            0.68441,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/53.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31816,
+            0.68216,
+            -1.31791,
+            0.68372,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/54.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31811,
+            0.68226,
+            -1.31786,
+            0.68381,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/55.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31806,
+            0.68236,
+            -1.31781,
+            0.68391,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/56.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31801,
+            0.68245,
+            -1.31776,
+            0.684,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/57.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31796,
+            0.68255,
+            -1.31771,
+            0.6841,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/58.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31791,
+            0.68264,
+            -1.31766,
+            0.6842,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/59.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31786,
+            0.68274,
+            -1.31761,
+            0.68429,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/60.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.3178,
+            0.68284,
+            -1.31756,
+            0.68439,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/61.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31786,
+            0.68233,
+            -1.31762,
+            0.68388,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/62.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31781,
+            0.68243,
+            -1.31757,
+            0.68398,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/63.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31776,
+            0.68252,
+            -1.31751,
+            0.68408,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/64.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31771,
+            0.68262,
+            -1.31746,
+            0.68417,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/65.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31766,
+            0.68271,
+            -1.31741,
+            0.68427,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/66.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31762,
+            0.6824,
+            -1.31737,
+            0.68395,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/67.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31757,
+            0.6825,
+            -1.31732,
+            0.68405,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/68.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31751,
+            0.68259,
+            -1.31727,
+            0.68415,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/69.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31746,
+            0.68269,
+            -1.31722,
+            0.68424,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/70.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31742,
+            0.68238,
+            -1.31717,
+            0.68393,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/71.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31737,
+            0.68247,
+            -1.31712,
+            0.68403,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/72.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31732,
+            0.68257,
+            -1.31707,
+            0.68412,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/73.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31723,
+            0.68235,
+            -1.31698,
+            0.6839,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/74.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31717,
+            0.68245,
+            -1.31693,
+            0.684,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/75.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31712,
+            0.68254,
+            -1.31688,
+            0.6841,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/76.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31703,
+            0.68233,
+            -1.31678,
+            0.68388,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/77.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31698,
+            0.68242,
+            -1.31673,
+            0.68398,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/78.b3dm"
+        }
+      },
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            -1.31693,
+            0.68252,
+            -1.31668,
+            0.68407,
+            -0.0,
+            76.58
+          ]
+        },
+        "content": {
+          "uri": "tiles/79.b3dm"
+        }
+      }
+    ],
+    "transform": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1238070.0029833354,
+      -4795867.907504121,
+      4006102.3617460253,
+      1.0
+    ],
+    "geometricError": 2024.0,
+    "refine": "ADD",
+    "boundingVolume": {
+      "region": [
+        -1.31972,
+        0.68236,
+        -1.31659,
+        0.68439,
+        -0.0,
+        76.58
+      ]
+    }
+  },
+  "asset": {
+    "generator": "pg2b3dm 0.16.0.0",
+    "version": "1.0"
+  }
+}
