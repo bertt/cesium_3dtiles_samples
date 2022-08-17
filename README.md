@@ -52,6 +52,10 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/ImplicitSubtreeMetada
 
 ## 3D Tiles 1.0 samples:
 
+- Delaware b3dm buildings using region in tileset.json
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/delaware
+
 OpenDroneMap - Obj2Tiles
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/obj2tiles
