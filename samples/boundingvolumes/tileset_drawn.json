@@ -1,0 +1,23 @@
+{
+  "root": {
+    "geometricError": 4048.0,
+    "boundingVolume": {
+      "region": [
+        -1.3197219872492525, 0.6823609056767111, -1.3165943572296785, 0.6843854876090245,
+        -0.0,
+        76.58
+      ]
+    },
+    "implicitTiling": {
+      "subdivisionScheme": "QUADTREE",
+      "subtreeLevels": 3,
+      "subtrees": {
+        "uri": "subtrees/{level}_{x}_{y}.subtree"
+      }
+    }
+  },
+  "asset": {
+    "generator": "test",
+    "version": "1.0"
+  }
+}
