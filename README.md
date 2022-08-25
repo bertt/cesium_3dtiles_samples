@@ -54,7 +54,7 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/ImplicitSubtreeMetada
 
 - Utrecht3D with implicit tiling
 
-https://bertt.github.io/cesium_3dtiles_samples/samples/outline
+https://bertt.github.io/cesium_3dtiles_samples/samples/utrecht3d
 
 - Outlines with CESIUM_primitive_outline
 
