@@ -52,6 +52,11 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/ImplicitSubtreeMetada
 
 ## 3D Tiles 1.0 samples:
 
+- Outlines with CESIUM_primitive_outline
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/outline
+
+
 - Delaware b3dm buildings using region in tileset.json
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/delaware
