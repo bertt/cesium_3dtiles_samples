@@ -18,14 +18,14 @@
       5008717.6498619635,
       1.0
     ],
-    "geometricError": 4048.0,
+    "geometricError": 2048.0,
     "refine": "REPLACE",
     "boundingVolume": {
       "region": [
         0.08688,
-        0.90935,
-        0.09051,
         0.90876,
+        0.09051,
+        0.90935,
         0.0,
         100.0
       ]
