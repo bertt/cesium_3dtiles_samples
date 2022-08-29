@@ -34,7 +34,7 @@
     var tileset = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
         url : 'tileset_bad.json'
     }));
-
+    tileset.debugShowUrl = true;
     tileset.debugShowBoundingVolume = true;
     tileset.debugColorizeTiles = true;
     viewer.scene.globe.depthTestAgainstTerrain = true;
