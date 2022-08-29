@@ -13,19 +13,19 @@
       0.0,
       1.0,
       0.0,
-      3912115.1014260715,
-      347904.98270302324,
-      5008717.6498619635,
+      3912052.25,
+      347907.09375,
+      5008629.5,
       1.0
     ],
-    "geometricError": 2048.0,
+    "geometricError": 2024.0,
     "refine": "REPLACE",
     "boundingVolume": {
       "region": [
-        0.08688,
-        0.90876,
-        0.09051,
-        0.90935,
+        0.08668,
+        0.90808,
+        0.09072,
+        0.91004,
         0.0,
         100.0
       ]
@@ -35,14 +35,14 @@
     },
     "implicitTiling": {
       "subdivisionScheme": "QUADTREE",
-      "subtreeLevels": 6,
+      "subtreeLevels": 7,
       "subtrees": {
         "uri": "subtrees/{level}_{x}_{y}.subtree"
       }
     }
   },
   "asset": {
-    "generator": "pg2b3dm 1.1.0.0",
+    "generator": "pg2b3dm 1.2.1.0",
     "version": "1.0"
   }
 }
