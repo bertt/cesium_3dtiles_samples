@@ -1,0 +1,164 @@
+{
+  "asset": {
+    "copyright": "",
+    "generator": "SharpGLTF 1.0.0-alpha0026+f31e8d4c1c1510c855df83b60d649e7e49e1c22b",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "name": "POSITION",
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 10269,
+      "max": [
+        3826.428466796875,
+        4257.0830078125,
+        5484.1298828125
+      ],
+      "min": [
+        -6545.0576171875,
+        -3384.033203125,
+        -4531.17236328125
+      ],
+      "type": "VEC3"
+    },
+    {
+      "name": "NORMAL",
+      "bufferView": 0,
+      "byteOffset": 12,
+      "componentType": 5126,
+      "count": 10269,
+      "max": [
+        0.9810270667076111,
+        0.7980920672416687,
+        0.7754138708114624
+      ],
+      "min": [
+        -0.9806622266769409,
+        -0.8889642953872681,
+        -0.7756708860397339
+      ],
+      "type": "VEC3"
+    },
+    {
+      "name": "_BATCHID",
+      "bufferView": 0,
+      "byteOffset": 24,
+      "componentType": 5126,
+      "count": 10269,
+      "max": [
+        0
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5123,
+      "count": 10524,
+      "type": "SCALAR"
+    },
+    {
+      "name": "Animation.Input",
+      "bufferView": 2,
+      "componentType": 5123,
+      "count": 14032,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 287532,
+      "byteStride": 28,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 21048,
+      "byteOffset": 315596,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 28064,
+      "byteOffset": 287532
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 336644,
+      "uri": "test10.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          0,
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "_BATCHID": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "extensions": {
+            "CESIUM_primitive_outline": {
+              "indices": 4
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "extensionsUsed": [
+    "CESIUM_primitive_outline"
+  ]
+}
