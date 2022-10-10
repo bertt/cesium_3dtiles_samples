@@ -9,7 +9,7 @@
       "name": "POSITION",
       "bufferView": 0,
       "componentType": 5126,
-      "count": 1294849,
+      "count": 450922,
       "max": [
         6813.59375,
         4585.98876953125,
@@ -18,7 +18,7 @@
       "min": [
         -6813.59375,
         -4585.98876953125,
-        -6077.6982421875
+        -5980.24853515625
       ],
       "type": "VEC3"
     },
@@ -27,16 +27,16 @@
       "bufferView": 0,
       "byteOffset": 12,
       "componentType": 5126,
-      "count": 1294849,
+      "count": 450922,
       "max": [
-        0.9916051030158997,
-        0.9997463226318359,
-        0.9997577667236328
+        0.9812189340591431,
+        0.75163733959198,
+        0.7761056423187256
       ],
       "min": [
-        -0.9965121150016785,
-        -0.9996227622032166,
-        -0.999899685382843
+        -0.9812191724777222,
+        -0.6611026525497437,
+        -0.776116132736206
       ],
       "type": "VEC3"
     },
@@ -45,7 +45,7 @@
       "bufferView": 0,
       "byteOffset": 24,
       "componentType": 5126,
-      "count": 1294849,
+      "count": 450922,
       "max": [
         0
       ],
@@ -57,39 +57,39 @@
     {
       "bufferView": 1,
       "componentType": 5125,
-      "count": 1322454,
+      "count": 464760,
       "type": "SCALAR"
     },
     {
       "name": "Animation.Input",
       "bufferView": 2,
       "componentType": 5125,
-      "count": 2644908,
+      "count": 619680,
       "type": "SCALAR"
     }
   ],
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 36255772,
+      "byteLength": 12625816,
       "byteStride": 28,
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 5289816,
-      "byteOffset": 46835404,
+      "byteLength": 1859040,
+      "byteOffset": 15104536,
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 10579632,
-      "byteOffset": 36255772
+      "byteLength": 2478720,
+      "byteOffset": 12625816
     }
   ],
   "buffers": [
     {
-      "byteLength": 52125220,
+      "byteLength": 16963576,
       "uri": "test11.bin"
     }
   ],
@@ -97,12 +97,8 @@
     {
       "doubleSided": true,
       "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          1,
-          0,
-          0,
-          1
-        ]
+        "metallicFactor": 0,
+        "roughnessFactor": 0
       }
     }
   ],
