@@ -64,7 +64,7 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/lod/
 
 - Outlines with CESIUM_primitive_outline
 
-Dealware: https://bertt.github.io/cesium_3dtiles_samples/samples/outline/box
+Delaware: https://bertt.github.io/cesium_3dtiles_samples/samples/outline/delaware
 
 Box: https://bertt.github.io/cesium_3dtiles_samples/samples/outline/box
 
