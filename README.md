@@ -64,7 +64,9 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/lod/
 
 - Outlines with CESIUM_primitive_outline
 
-https://bertt.github.io/cesium_3dtiles_samples/samples/outline
+Dealware: https://bertt.github.io/cesium_3dtiles_samples/samples/outline/box
+
+Box: https://bertt.github.io/cesium_3dtiles_samples/samples/outline/box
 
 - Delaware b3dm buildings using region in tileset.json
 
