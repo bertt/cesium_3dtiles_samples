@@ -4,6 +4,7 @@
   },
   "geometricError": 500,
   "root": {
+    "geometricError": 500,
     "transform": [
       1.0,
       0.0,
