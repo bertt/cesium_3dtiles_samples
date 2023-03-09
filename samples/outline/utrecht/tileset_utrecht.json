@@ -1,0 +1,57 @@
+{
+  "geometricError": 2000.0,
+  "root": {
+    "children": [
+      {
+        "geometricError": 0.0,
+        "boundingVolume": {
+          "region": [
+            0.08938,
+            0.90914,
+            0.08939,
+            0.90916,
+            0.0,
+            100.0
+          ]
+        },
+        "content": {
+          "uri": "test14.glb"
+        }
+      }
+    ],
+    "transform": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      3911329.0,
+      350541.96875,
+      5009008.0,
+      1.0
+    ],
+    "geometricError": 2000.0,
+    "refine": "ADD",
+    "boundingVolume": {
+      "region": [
+        0.08938,
+        0.90914,
+        0.08939,
+        0.90916,
+        0.0,
+        100.0
+      ]
+    }
+  },
+  "asset": {
+    "generator": "pg2b3dm 1.4.3.0",
+    "version": "1.0"
+  }
+}
