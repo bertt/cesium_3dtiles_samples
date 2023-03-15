@@ -30,11 +30,13 @@
     var viewer = new Cesium.Viewer('cesiumContainer', {
       // terrainProvider : Cesium.createWorldTerrain()
       timeline: false,
-      animation: false
+      animation: false,
+      shadows: false
     });
     viewer.scene.debugShowFramesPerSecond = true;
     var tileset = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
         url : 'tileset.json',
+        outlineColor : Cesium.Color.BLUE,
 	customShader: new Cesium.CustomShader({lightingModel: Cesium.LightingModel.UNLIT})
     }));
     viewer.camera.flyTo({
