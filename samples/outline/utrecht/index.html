@@ -34,7 +34,8 @@
     });
     viewer.scene.debugShowFramesPerSecond = true;
     var tileset = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
-        url : 'tileset.json'
+        url : 'tileset.json',
+	customShader: new Cesium.CustomShader({lightingModel: Cesium.LightingModel.UNLIT})
     }));
     viewer.camera.flyTo({
        destination: new Cesium.Cartesian3.fromDegrees(5.1216481,52.0899879,
