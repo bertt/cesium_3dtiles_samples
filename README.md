@@ -4,7 +4,7 @@
 
 1] Delaware - sample of 3D Tiles 1.1 implicit tiling + Outlines + Draco compression + batching information 
 
-https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/delaware
+https://bertt.github.io/cesium_3dtiles_samples/samples/delaware
 
 ![image](https://user-images.githubusercontent.com/538812/225590166-310a6639-a113-4678-9eb2-854b816bd18b.png)
 
