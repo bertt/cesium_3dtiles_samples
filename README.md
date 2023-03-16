@@ -2,7 +2,13 @@
 
 ## 3D Tiles 1.1 samples:
 
-1] Trees - Sample of instanced i3dm/cmpt 3D trees using implicit quadtree
+1] Delaware - sample of 3D Tiles 1.1 implicit tiling + Outlines + Draco compression + batching information 
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/delaware
+
+![image](https://user-images.githubusercontent.com/538812/225590166-310a6639-a113-4678-9eb2-854b816bd18b.png)
+
+2] Trees - Sample of instanced i3dm/cmpt 3D trees using implicit quadtree
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/trees/
 
@@ -10,27 +16,23 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/trees/
 
 Samples of EXT_mesh_gpu_instancing
 
-1] Forest
+3] Forest
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/forest/
 
 ![image](https://user-images.githubusercontent.com/538812/181376795-c7605697-b6b1-4a8d-930a-634ec341e26c.png)
 
-2] Teapots
+4] Teapots
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/teapots_galore/
 
 ![image](https://user-images.githubusercontent.com/538812/180180482-2a1123e4-5027-4986-ad24-c900aed01221.png)
 
-3] Random shapes
+5] Random shapes
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/random_shapes/
 
-- Delaware
-
-https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/delaware
-
-- Houses, trees with metadata
+6] Houses, trees with metadata
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/MetadataGranularities/
 
