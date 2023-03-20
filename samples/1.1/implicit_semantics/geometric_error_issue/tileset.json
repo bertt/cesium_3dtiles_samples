@@ -1,0 +1,51 @@
+{
+  "asset": {
+    "version": "1.1"
+  },
+  "schema": {
+    "id":"first",
+    "classes": {
+      "tile": {
+        "properties": {
+          "geometricError": {
+            "semantic": "TILE_GEOMETRIC_ERROR",
+            "type": "SCALAR",
+            "componentType": "FLOAT64"
+          }
+        }
+      }
+    }
+  },
+  "geometricError": 1000,
+  "root": {
+    "boundingVolume": {
+      "box": [
+        0,
+        0,
+        0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.5
+      ]
+    },
+    "geometricError": 500,
+    "refine": "ADD",
+    "content": {
+      "uri": "content/box_{level}__{x}_{y}.glb"
+    },
+    "implicitTiling": {
+      "subdivisionScheme": "QUADTREE",
+      "subtreeLevels": 1,
+      "availableLevels": 1,
+      "subtrees": {
+        "uri": "subtrees/{level}.{x}.{y}.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "buffers": [
+    {
+      "uri": "metadata.bin",
+      "byteLength": 8
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 8
+    }
+  ],
+  "tileAvailability": {
+    "constant": 1,
+    "availableCount": 1
+  },
+  "contentAvailability": [
+    {
+      "constant": 1,
+      "availableCount": 1
+    }
+  ],
+  "childSubtreeAvailability": {
+    "availableCount": 0,
+    "constant": 0
+  },
+  "propertyTables": [
+    {
+      "count": 1,
+      "class": "tile",
+      "properties": {
+        "geometricError": {
+          "values": 0
+        }
+      }
+    }
+  ],
+  "tileMetadata": 0
+}
