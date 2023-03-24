@@ -6,7 +6,7 @@
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/delaware
 
-![image](https://user-images.githubusercontent.com/538812/225590166-310a6639-a113-4678-9eb2-854b816bd18b.png)
+![image](https://user-images.githubusercontent.com/538812/227475602-54e8495f-2e10-47a1-b437-c8dabc465e54.png)
 
 2] Trees - Sample of instanced i3dm/cmpt 3D trees using implicit quadtree
 
