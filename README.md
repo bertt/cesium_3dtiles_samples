@@ -54,6 +54,12 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/ImplicitSubtreeMetada
 
 ## 3D Tiles 1.0 samples:
 
+- AHN 4 Point cloud Schiphol (pnts)
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/pointcloud/schiphol/
+
+![image](https://user-images.githubusercontent.com/538812/228637827-62c3959d-03c1-4cf4-8bda-b8dbfd3435af.png)
+
 - Utrecht3D with implicit tiling
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/utrecht3d
