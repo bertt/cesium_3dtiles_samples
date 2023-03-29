@@ -1,0 +1,42 @@
+{
+	"asset": {
+		"version": "1.0"
+	},
+	"geometricError": 1.0825317547305482,
+	"root": {
+		"children": [
+			{
+				"content": {
+					"uri": "3/content.pnts"
+				},
+				"boundingVolume": {
+					"region": [
+						0.08319092564764603,
+						0.9129482594088273,
+						0.083196540482746,
+						0.9129501068603558,
+						5.2675,
+						6.41875
+					]
+				},
+				"geometricError": 0.5412658773652741,
+				"refine": "ADD"
+			}
+		],
+		"content": {
+			"uri": "content.pnts"
+		},
+		"boundingVolume": {
+			"region": [
+				0.08318531081254607,
+				0.912946411952859,
+				0.083196540482746,
+				0.9129501068603558,
+				5.2675,
+				7.57
+			]
+		},
+		"geometricError": 1.0825317547305482,
+		"refine": "ADD"
+	}
+}
