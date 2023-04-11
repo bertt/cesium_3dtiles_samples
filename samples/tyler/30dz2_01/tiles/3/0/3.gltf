@@ -1,0 +1,266 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5123,
+      "count": 9,
+      "max": [
+        8
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 9,
+      "max": [
+        2
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 4,
+      "componentType": 5122,
+      "count": 9,
+      "max": [
+        32759,
+        32765,
+        32767
+      ],
+      "min": [
+        -32767,
+        -32765,
+        -32355
+      ],
+      "normalized": true,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 12,
+      "componentType": 5120,
+      "count": 9,
+      "max": [
+        78,
+        6,
+        100
+      ],
+      "min": [
+        78,
+        6,
+        100
+      ],
+      "normalized": true,
+      "type": "VEC3"
+    }
+  ],
+  "asset": {
+    "generator": "Geoflow",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 20,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteLength": 20,
+          "byteOffset": 0,
+          "byteStride": 2,
+          "count": 9,
+          "mode": "TRIANGLES"
+        }
+      },
+      "target": 34963,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 144,
+      "byteStride": 16,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteLength": 120,
+          "byteOffset": 20,
+          "byteStride": 16,
+          "count": 9,
+          "mode": "ATTRIBUTES"
+        }
+      },
+      "target": 34962,
+      "byteOffset": 20
+    },
+    {
+      "buffer": 0,
+      "byteLength": 12,
+      "byteOffset": 164,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 16,
+      "byteOffset": 176,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 16,
+      "byteOffset": 192,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 16,
+      "byteOffset": 208,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 12,
+      "byteOffset": 224,
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "3_data.bin",
+      "byteLength": 236
+    }
+  ],
+  "extensions": {
+    "EXT_structural_metadata": {
+      "propertyTables": [
+        {
+          "class": "terrain",
+          "count": 3,
+          "name": "propertyTable name",
+          "properties": {
+            "bgt_type": {
+              "stringOffsetType": "UINT32",
+              "stringOffsets": 3,
+              "values": 2
+            },
+            "bronhouder": {
+              "stringOffsetType": "UINT32",
+              "stringOffsets": 5,
+              "values": 4
+            },
+            "objectid": {
+              "values": 6
+            }
+          }
+        }
+      ],
+      "schema": {
+        "classes": {
+          "terrain": {
+            "description": "class description",
+            "name": "terrain",
+            "properties": {
+              "bgt_type": {
+                "type": "STRING"
+              },
+              "bronhouder": {
+                "type": "STRING"
+              },
+              "objectid": {
+                "componentType": "INT32",
+                "noData": 2147483647,
+                "type": "SCALAR"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "extensionsRequired": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsUsed": [
+    "EXT_mesh_features",
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization",
+    "EXT_structural_metadata"
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.1607843137254902,
+          0.22745098039215686,
+          0.2901960784313726,
+          1
+        ]
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 3,
+            "POSITION": 2,
+            "_FEATURE_ID_0": 1
+          },
+          "extensions": {
+            "EXT_mesh_features": {
+              "featureIds": [
+                {
+                  "attribute": 0,
+                  "featureCount": 3,
+                  "propertyTable": 0
+                }
+              ]
+            }
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "matrix": [
+        55.5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -54.03125,
+        0,
+        0,
+        40.5,
+        0,
+        0,
+        3916714.5,
+        5008780,
+        -289067.625,
+        1
+      ],
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
