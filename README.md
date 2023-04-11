@@ -80,6 +80,9 @@ Utrecht: https://bertt.github.io/cesium_3dtiles_samples/samples/outline/utrecht/
 
 ![image](https://user-images.githubusercontent.com/538812/225011270-27ab9b8b-ce81-4d7e-b30f-f5d08dae7122.png)
 
+- Tyler https://bertt.github.io/cesium_3dtiles_samples/samples/tyler/30dz2_01/
+
+![image](https://user-images.githubusercontent.com/538812/231123126-fa1b91f8-b6ef-4146-b762-b26706162f50.png)
 
 - Delaware b3dm buildings using region in tileset.json
 
