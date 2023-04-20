@@ -52,6 +52,10 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/SparseImplicitQuadtre
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/ImplicitSubtreeMetadata
 
+- Sample extensions EXT_structural_metadata and EXT_mesh_features
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/FeatureIdAttributeAndPropertyTable
+
 ## 3D Tiles 1.0 samples:
 
 - AHN 4 Point cloud Schiphol (pnts)
