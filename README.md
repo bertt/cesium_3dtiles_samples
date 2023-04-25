@@ -22,7 +22,7 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/forest/
 
 ![image](https://user-images.githubusercontent.com/538812/181376795-c7605697-b6b1-4a8d-930a-634ec341e26c.png)
 
-4] Teapots
+4] Teapots - sample of EXT_mesh_gpu_instancing in CesiumJS
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/teapots_galore/
 
