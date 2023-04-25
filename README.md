@@ -52,9 +52,11 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/SparseImplicitQuadtre
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/ImplicitSubtreeMetadata
 
-- Sample extensions EXT_structural_metadata and EXT_mesh_features
+- Sample 3D Tiles 1.1 extensions EXT_structural_metadata and EXT_mesh_features
 
-https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/FeatureIdAttributeAndPropertyTable
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/attributes
+
+![extensions](https://user-images.githubusercontent.com/538812/234398764-80579eb6-5845-411c-8a8a-464c494db997.gif)
 
 ## 3D Tiles 1.0 samples:
 
