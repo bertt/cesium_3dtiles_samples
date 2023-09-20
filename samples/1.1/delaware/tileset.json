@@ -15,24 +15,24 @@
       1.0,
       0.0,
       1237929.375,
-      -4795306.0,
-      4005629.75,
+      -4795305.5,
+      4005630.0,
       1.0
     ],
     "geometricError": 2000.0,
     "refine": "ADD",
     "boundingVolume": {
       "region": [
-        -1.31972,
-        0.68202,
-        -1.31659,
-        0.68473,
+        -1.319720634428208,
+        0.6820249136353067,
+        -1.3165948696296743,
+        0.6847240769638034,
         0.0,
         100.0
       ]
     },
     "content": {
-      "uri": "content/{level}_{x}_{y}.b3dm"
+      "uri": "content/{level}_{x}_{y}.glb"
     },
     "implicitTiling": {
       "availableLevels": 5,
@@ -44,7 +44,7 @@
     }
   },
   "asset": {
-    "generator": "pg2b3dm 1.5.1.0",
+    "generator": "pg2b3dm 1.7.1.0",
     "version": "1.0"
   }
 }
