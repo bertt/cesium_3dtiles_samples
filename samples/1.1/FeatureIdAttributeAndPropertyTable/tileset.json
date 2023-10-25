@@ -5,14 +5,14 @@
   "geometricError" : 100.0,
   "root" : {
     "content" : {
-      "uri" : "FeatureIdAttribute.gltf"
+      "uri" : "test36.glb"
     },
     "boundingVolume" : {
       "box" : [ 
-        0.5, 0.0, 0.5,
-        0.5, 0.0, 0.0, 
+        20, 0.0, 20,
+        20, 0.0, 0.0, 
         0.0, 0.01, 0.0, 
-        0.0, 0.0, 0.5]
+        0.0, 0.0, 20]
     },
     "geometricError" : 0.0
   }
