@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cesium/1.110.1/Cesium.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/cesium/1.110.1/Widgets/widgets.min.css" rel="stylesheet">
+  </head>
+   
+   <body>
+     <div id="cesiumContainer"></div>
+     <script type="module">
+      Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIzZDFhZGJhMi00OWQ2LTQzOGQtOTY2Ni04MmIxOTVjZmMwZjQiLCJpZCI6NDc4OSwiaWF0IjoxNjk4Mzk4MjM2fQ.GBw4d-IZ-VW22FnqX_fCE2zoctdf8wVnVxlpW2aOq5A";
+      const viewer = new Cesium.Viewer("cesiumContainer");
+      var tileset = await Cesium.Cesium3DTileset.fromUrl("tileset.json");
+      viewer.scene.primitives.add(tileset);
+      viewer.zoomTo(tileset, new Cesium.HeadingPitchRange(0, -0.5, 0));
+      tileset.debugShowBoundingVolume = true;     
+      </script>
+   </body>
+</html>
