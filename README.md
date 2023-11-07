@@ -58,6 +58,13 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/attributes
 
 ![extensions](https://user-images.githubusercontent.com/538812/234398764-80579eb6-5845-411c-8a8a-464c494db997.gif)
 
+- Instancing 4 trees
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/instancing
+
+  ![image](https://github.com/bertt/cesium_3dtiles_samples/assets/538812/999e192c-bd88-4851-9def-e8f952788581)
+
+
 ## 3D Tiles 1.0 samples:
 
 - AHN 4 Point cloud Schiphol (pnts)
