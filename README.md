@@ -58,12 +58,11 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/attributes
 
 ![extensions](https://user-images.githubusercontent.com/538812/234398764-80579eb6-5845-411c-8a8a-464c494db997.gif)
 
-- Instancing 4 trees
+- 1 tree model, 4 instances
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/instancing
 
-  ![image](https://github.com/bertt/cesium_3dtiles_samples/assets/538812/999e192c-bd88-4851-9def-e8f952788581)
-
+![image](https://github.com/bertt/cesium_3dtiles_samples/assets/538812/7181b24d-1d26-4794-8854-329c7192c381)
 
 ## 3D Tiles 1.0 samples:
 
