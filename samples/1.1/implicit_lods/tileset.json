@@ -1,5 +1,5 @@
 {
-  "geometricError": 2000.0,
+  "geometricError": 350.0,
   "root": {
     "transform": [
       1.0,
