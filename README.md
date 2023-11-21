@@ -2,6 +2,16 @@
 
 ## 3D Tiles 1.1 samples:
 
+0] EXT_Meshfeatures
+
+- By attribute
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/EXT_Mesh_features/FeatureIdAttribute/
+
+- By texture
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/EXT_Mesh_features/FeatureIdTexture/
+
 1] Delaware - sample of 3D Tiles 1.1 implicit tiling + EXT_structural_metadata/EXT_mesh_features
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/delaware
