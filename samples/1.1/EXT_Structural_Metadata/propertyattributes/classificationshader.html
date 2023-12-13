@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.112/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.112/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+  
+    <style>
+      html, body, #cesiumContainer {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .toolbar-left {
+            display: block;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+  </style>
+</head>
+<body>
+  <div id="cesiumContainer"></div>
+  <script type="module">
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiNDc1ZjQwMS1hOGI2LTQyNmUtYmYxMi1jODlhNDNlMjViZTkiLCJpZCI6NDc4OSwic2NvcGVzIjpbImFzciIsImdjIl0sImlhdCI6MTU0MTYyNTg3OX0.mNoGLdYuwqsnRRkQtdYNMbJfMBoZF2hPkbc4SRVVqNw';
+    const viewer = new Cesium.Viewer("cesiumContainer");
+
+    const tileset = viewer.scene.primitives.add(
+  await Cesium.Cesium3DTileset.fromUrl(
+    "tileset.json",
+    {
+      debugShowBoundingVolume: true,
+    }
+    )
+    );
+
+// Move the tileset to a certain position on the globe,
+// and zoom the viewer to the tileset
+tileset.modelMatrix = Cesium.Transforms.eastNorthUpToFixedFrame(
+  Cesium.Cartesian3.fromDegrees(-75.152325, 39.94704, 0)
+);
+const offset = new Cesium.HeadingPitchRange(
+  Cesium.Math.toRadians(-22.5),
+  Cesium.Math.toRadians(-22.5),
+  32.0
+);
+viewer.zoomTo(tileset, offset);
+//   tileset.customShader = createCustomShader();
+
+// The dictionary of shaders that can be selected from the sandcastle menu:
+const shaders = {
+ // NOTE: The classification attribute is accessed in the vertex
+  // shader here. When it is accessed in the fragment shader, it
+  // may not have exactly the expected value. This is tracked in
+  // https://github.com/CesiumGS/cesium/issues/10699
+  CLASSIFICATION_SHADER: new Cesium.CustomShader({
+    varyings: {
+      v_color: Cesium.VaryingType.VEC3,
+    },
+    vertexShaderText: `
+    void vertexMain(VertexInput vsInput, inout czm_modelVertexOutput vsOutput) {
+        int classification = int(vsInput.attributes.classification);
+        
+        vec3 color = vec3(1);
+        if (classification == 0) {
+            color = vec3(0,0.5,0);
+        }
+        else if (classification == 1) {
+            color = vec3(0.5,0.5,0.5);
+        }
+
+        v_color = color;
+    }`,
+    fragmentShaderText: `
+    void fragmentMain(FragmentInput fsInput, inout czm_modelMaterial material)
+    {
+        material.diffuse = v_color;
+    }
+    `,
+  }),
+};
+   tileset.customShader = shaders.CLASSIFICATION_SHADER;
+
+  </script>
+</body>
+</html>
