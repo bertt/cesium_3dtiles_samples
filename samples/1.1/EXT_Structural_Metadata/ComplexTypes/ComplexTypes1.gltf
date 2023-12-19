@@ -1,0 +1,235 @@
+{
+  "extensions": {
+    "EXT_structural_metadata": {
+      "propertyTables": [
+        {
+          "class": "exampleMetadataClass",
+          "count": 1,
+          "name": "Example property table",
+          "properties": {
+            "example_variable_length_ARRAY_normalized_UINT8": {
+              "arrayOffsets": 3,
+              "values": 2
+            },
+            "example_fixed_length_ARRAY_BOOLEAN": {
+              "values": 4
+            },
+            "example_variable_length_ARRAY_STRING": {
+              "arrayOffsets": 6,
+              "stringOffsets": 7,
+              "values": 5
+            },
+            "example_fixed_length_ARRAY_ENUM": {
+              "values": 8
+            }
+          }
+        }
+      ],
+      "schema": {
+        "classes": {
+          "exampleMetadataClass": {
+            "description": "First example metadata class",
+            "name": "Example metadata class A",
+            "properties": {
+              "example_variable_length_ARRAY_normalized_UINT8": {
+                "array": true,
+                "componentType": "UINT8",
+                "description": "An example property, with type ARRAY, with component type UINT8, normalized, and variable length",
+                "name": "Example variable-length ARRAY normalized INT8 property",
+                "type": "SCALAR"
+              },
+              "example_fixed_length_ARRAY_BOOLEAN": {
+                "array": true,
+                "count": 4,
+                "description": "An example property, with type ARRAY, with component type BOOLEAN, and fixed length ",
+                "name": "Example fixed-length ARRAY BOOLEAN property",
+                "type": "BOOLEAN"
+              },
+              "example_variable_length_ARRAY_STRING": {
+                "array": true,
+                "description": "An example property, with type ARRAY, with component type STRING, and variable length",
+                "name": "Example variable-length ARRAY STRING property",
+                "type": "STRING"
+              },
+              "example_fixed_length_ARRAY_ENUM": {
+                "array": true,
+                "count": 2,
+                "description": "An example property, with type ARRAY, with component type ENUM, and fixed length",
+                "enumType": "exampleEnumType",
+                "name": "Example fixed-length ARRAY ENUM property",
+                "type": "ENUM"
+              }
+            }
+          }
+        },
+        "enums": {
+          "exampleEnumType": {
+            "values": [
+              {
+                "name": "ExampleEnumValueA",
+                "value": 0
+              },
+              {
+                "name": "ExampleEnumValueB",
+                "value": 1
+              },
+              {
+                "name": "ExampleEnumValueC",
+                "value": 2
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "asset": {
+    "copyright": "",
+    "generator": "SharpGLTF 1.0.0\u002B98363a640e4e1abf8bb5c94db29f379e2a4d6a98",
+    "version": "2.0"
+  },
+  "extensionsUsed": [
+    "EXT_structural_metadata",
+    "EXT_mesh_features"
+  ],
+  "accessors": [
+    {
+      "name": "POSITION",
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 3,
+      "max": [
+        1,
+        1,
+        0
+      ],
+      "min": [
+        -1,
+        0,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "name": "_FEATURE_ID_0",
+      "bufferView": 0,
+      "byteOffset": 12,
+      "componentType": 5126,
+      "count": 3,
+      "max": [
+        0
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5123,
+      "count": 3,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 48,
+      "byteStride": 16,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 6,
+      "byteOffset": 144,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 8,
+      "byteOffset": 112
+    },
+    {
+      "buffer": 0,
+      "byteLength": 8,
+      "byteOffset": 120
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1,
+      "byteOffset": 152
+    },
+    {
+      "buffer": 0,
+      "byteLength": 48,
+      "byteOffset": 48
+    },
+    {
+      "buffer": 0,
+      "byteLength": 8,
+      "byteOffset": 128
+    },
+    {
+      "buffer": 0,
+      "byteLength": 16,
+      "byteOffset": 96
+    },
+    {
+      "buffer": 0,
+      "byteLength": 8,
+      "byteOffset": 136
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 156,
+      "uri": "ComplexTypes1.bin"
+    }
+  ],
+  "materials": [
+    {
+      "name": "Default",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {}
+    }
+  ],
+  "meshes": [
+    {
+      "name": "mesh",
+      "primitives": [
+        {
+          "extensions": {
+            "EXT_mesh_features": {
+              "featureIds": [
+                {
+                  "attribute": 0,
+                  "featureCount": 1,
+                  "propertyTable": 0
+                }
+              ]
+            }
+          },
+          "attributes": {
+            "POSITION": 0,
+            "_FEATURE_ID_0": 1
+          },
+          "indices": 2,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "extensions": {
+    "EXT_structural_metadata": {
+      "propertyTables": [
+        {
+          "class": "exampleMetadataClass",
+          "count": 1,
+          "name": "Example property table",
+          "properties": {
+            "example_VEC3_FLOAT32": {
+              "values": 2
+            },
+            "example_MAT4_FLOAT32": {
+              "values": 3
+            }
+          }
+        }
+      ],
+      "schema": {
+        "classes": {
+          "exampleMetadataClass": {
+            "description": "An example metadata class",
+            "name": "Example metadata class",
+            "properties": {
+              "example_VEC3_FLOAT32": {
+                "componentType": "FLOAT32",
+                "description": "An example property, with type VEC3, with component type FLOAT32",
+                "name": "Example VEC3 FLOAT32 property",
+                "type": "VEC3"
+              },
+              "example_MAT4_FLOAT32": {
+                "componentType": "FLOAT32",
+                "description": "An example property, with type MAT4, with component type FLOAT32",
+                "name": "Example MAT4 FLOAT32 property",
+                "type": "MAT4"
+              }
+            }
+          }
+        },
+        "id": "FeatureIdAttributeAndPropertyTableSchema"
+      }
+    }
+  },
+  "asset": {
+    "copyright": "",
+    "generator": "SharpGLTF 1.0.0\u002B98363a640e4e1abf8bb5c94db29f379e2a4d6a98",
+    "version": "2.0"
+  },
+  "extensionsUsed": [
+    "EXT_structural_metadata",
+    "EXT_mesh_features"
+  ],
+  "accessors": [
+    {
+      "name": "POSITION",
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 3,
+      "max": [
+        1,
+        1,
+        0
+      ],
+      "min": [
+        -1,
+        0,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "name": "_FEATURE_ID_0",
+      "bufferView": 0,
+      "byteOffset": 12,
+      "componentType": 5126,
+      "count": 3,
+      "max": [
+        0
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5123,
+      "count": 3,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 48,
+      "byteOffset": 64,
+      "byteStride": 16,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 6,
+      "byteOffset": 124,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 12,
+      "byteOffset": 112
+    },
+    {
+      "buffer": 0,
+      "byteLength": 64
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 132,
+      "uri": "FeatureIdAttributeAndPropertyTable1.bin"
+    }
+  ],
+  "materials": [
+    {
+      "name": "Default",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {}
+    }
+  ],
+  "meshes": [
+    {
+      "name": "mesh",
+      "primitives": [
+        {
+          "extensions": {
+            "EXT_mesh_features": {
+              "featureIds": [
+                {
+                  "attribute": 0,
+                  "featureCount": 1,
+                  "propertyTable": 0
+                }
+              ]
+            }
+          },
+          "attributes": {
+            "POSITION": 0,
+            "_FEATURE_ID_0": 1
+          },
+          "indices": 2,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
