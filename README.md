@@ -2,6 +2,11 @@
 
 ## 3D Tiles 1.1 samples:
 
+All_types - Demo of EXT_Meshfeatures and EXT_Structural_metadata for various types 
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/all_types/
+
+
 0] EXT_Meshfeatures
 
 - By attribute
