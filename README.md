@@ -2,6 +2,10 @@
 
 ## 3D Tiles 1.1 samples:
 
+North sea pipelines:
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/northsea_pipelines
+
 All_types - Demo of EXT_Meshfeatures and EXT_Structural_metadata for various types 
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/all_types/
