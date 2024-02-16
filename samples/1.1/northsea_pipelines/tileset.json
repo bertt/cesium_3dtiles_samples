@@ -1,5 +1,5 @@
 {
-  "geometricError": 20000.0,
+  "geometricError": 40000.0,
   "root": {
     "transform": [
       1.0,
@@ -19,7 +19,7 @@
       5273013.5,
       1.0
     ],
-    "geometricError": 20000.0,
+    "geometricError": 40000.0,
     "refine": "ADD",
     "boundingVolume": {
       "region": [
