@@ -101,6 +101,8 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/utrecht3d
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/lod_bag3d
 
+![cesium_lods1 gif](https://github.com/bertt/cesium_3dtiles_samples/assets/538812/963bd903-c4b7-4656-b057-a175517474ff)
+
 2] 
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/lod/
