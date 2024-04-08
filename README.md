@@ -93,6 +93,12 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/instancing
 
 ## 3D Tiles 1.0 samples:
 
+- Esri 3D Tiles in CesiumJS
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/esridemo  
+
+![image](https://github.com/bertt/cesium_3dtiles_samples/assets/538812/a9ddb24f-0f01-44b3-b7ab-af8c5f0c4d33)
+
 - AHN 4 Point cloud Schiphol (pnts)
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/pointcloud/schiphol/
