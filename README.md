@@ -2,6 +2,15 @@
 
 ## 3D Tiles 1.1 samples:
 
+Digital Obstacles:
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/digital_obstacles
+
+550K digital obstacles in instanced 3D Tiles - source https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dailydof/
+
+![image](https://github.com/bertt/cesium_3dtiles_samples/assets/538812/045a55cf-de27-4064-9622-885b4ba86757)
+
+
 North sea pipelines:
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/northsea_pipelines
