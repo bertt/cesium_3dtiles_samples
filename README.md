@@ -27,7 +27,15 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/delaware
 
 ![image](https://user-images.githubusercontent.com/538812/227475602-54e8495f-2e10-47a1-b437-c8dabc465e54.png)
 
-2] Trees - Sample of instanced i3dm/cmpt 3D trees using implicit quadtree
+2] Grenoble trees - Sample of 3D Tiles 1.1 Instanced tiles of 31K Grenoble trees using implicit tiling and structural metadata. 
+
+glTF extensions used: EXT_structural_metadata,EXT_mesh_gpu_instancing and EXT_instance_features
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/grenoble_trees
+
+![image](https://github.com/bertt/cesium_3dtiles_samples/assets/538812/aab05d1e-daba-43a8-ae41-e86e35056833)
+
+3] Trees - Sample of instanced i3dm/cmpt 3D trees using implicit quadtree
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/trees/
 
@@ -35,19 +43,19 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/trees/
 
 Samples of EXT_mesh_gpu_instancing
 
-3] Forest
+4] Forest
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/forest/
 
 ![image](https://user-images.githubusercontent.com/538812/181376795-c7605697-b6b1-4a8d-930a-634ec341e26c.png)
 
-4] Teapots - sample of EXT_mesh_gpu_instancing in CesiumJS
+5] Teapots - sample of EXT_mesh_gpu_instancing in CesiumJS
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/teapots_galore/
 
 ![image](https://user-images.githubusercontent.com/538812/180180482-2a1123e4-5027-4986-ad24-c900aed01221.png)
 
-5] Random shapes
+6] Random shapes
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/random_shapes/
 
@@ -84,6 +92,12 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/instancing
 ![image](https://github.com/bertt/cesium_3dtiles_samples/assets/538812/7181b24d-1d26-4794-8854-329c7192c381)
 
 ## 3D Tiles 1.0 samples:
+
+- Esri 3D Tiles in CesiumJS
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/esridemo  
+
+![image](https://github.com/bertt/cesium_3dtiles_samples/assets/538812/a9ddb24f-0f01-44b3-b7ab-af8c5f0c4d33)
 
 - AHN 4 Point cloud Schiphol (pnts)
 
