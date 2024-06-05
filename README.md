@@ -10,10 +10,12 @@ https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/digital_obstacles
 
 ![image](https://github.com/bertt/cesium_3dtiles_samples/assets/538812/045a55cf-de27-4064-9622-885b4ba86757)
 
-
 North sea pipelines:
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/northsea_pipelines
+
+![image](https://github.com/bertt/cesium_3dtiles_samples/assets/538812/4c0bf804-b4fd-4c26-b985-800c8b892f8c)
+
 
 All_types - Demo of EXT_Meshfeatures and EXT_Structural_metadata for various types 
 
