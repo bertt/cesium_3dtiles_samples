@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cesium/1.119.0/Cesium.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/cesium/1.119.0/Widgets/widgets.min.css" rel="stylesheet">
+  
+    <style>
+      html, body, #cesiumContainer {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .toolbar-left {
+            display: block;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+
+        #legend {
+          position: absolute;
+          top: 10px;
+          left: 5px;
+          background: rgba(42, 42, 42, 0.8);
+          padding: 5px 8px;
+          border-radius: 5px;
+          z-index: 10          
+        }
+
+  </style>
+</head>
+<body>
+  <div id="legend">
+    <img src="legend.png" alt="legend" class="image">
+  </div>s
+  <div id="cesiumContainer"></div>
+  <script type="module">
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiNDc1ZjQwMS1hOGI2LTQyNmUtYmYxMi1jODlhNDNlMjViZTkiLCJpZCI6NDc4OSwic2NvcGVzIjpbImFzciIsImdjIl0sImlhdCI6MTU0MTYyNTg3OX0.mNoGLdYuwqsnRRkQtdYNMbJfMBoZF2hPkbc4SRVVqNw';
+    var viewer = new Cesium.Viewer('cesiumContainer', {
+    });
+  viewer.scene.globe.depthTestAgainstTerrain=true;
+
+viewer.scene.light = new Cesium.DirectionalLight({
+  direction: viewer.scene.camera.directionWC,
+});
+
+var modelMatrix = Cesium.Transforms.eastNorthUpToFixedFrame(Cesium.Cartesian3.fromDegrees(-0.558785,44.831903, 0));
+var model = viewer.scene.primitives.add(await Cesium.Model.fromGltfAsync({
+    url : 'mesh1.glb',
+    modelMatrix : modelMatrix,
+}));
+
+viewer.camera.setView({
+      destination : new Cesium.Cartesian3.fromDegrees(-0.558747,44.826877,100),
+      orientation: {
+        heading : Cesium.Math.toRadians(0),
+        pitch : Cesium.Math.toRadians(-10),
+        roll : 0.0
+      }
+    });
+  </script>
+</body>
+</html>
