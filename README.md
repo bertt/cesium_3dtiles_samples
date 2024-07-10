@@ -2,6 +2,12 @@
 
 ## 3D Tiles 1.1 samples:
 
+Bordeaux textured autocad 3DS model
+
+![image](https://github.com/bertt/cesium_3dtiles_samples/assets/538812/bc542a32-7eb1-4123-960e-fe56e8ad8739)
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/textures_bordeaux
+
 Digital Obstacles:
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/digital_obstacles
