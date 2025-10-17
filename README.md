@@ -2,6 +2,12 @@
 
 ## 3D Tiles 1.1 samples:
 
+Octree subdivision
+
+<img width="680" height="364" alt="image" src="https://github.com/user-attachments/assets/bd3b6de4-330f-405c-8af7-9411aadf02a2" />
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/octree/
+
 Bordeaux textured autocad 3DS model
 
 ![image](https://github.com/bertt/cesium_3dtiles_samples/assets/538812/bc542a32-7eb1-4123-960e-fe56e8ad8739)
