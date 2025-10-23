@@ -1,9 +1,11 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/cesium/1.133.0/Cesium.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/cesium/1.133.0/Widgets/widgets.min.css" rel="stylesheet">
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.133/Build/Cesium/Cesium.js"></script>
+  <link href= "https://cesium.com/downloads/cesiumjs/releases/1.133/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
   
     <style>
       html, body, #cesiumContainer {
@@ -26,84 +28,50 @@
 <body>
   <div id="cesiumContainer"></div>
   <script type="module">
-     Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0NWQyNjhiOC1jYmQ5LTQyZWQtODJlMi01MTg5ZDNkMzRhOGQiLCJpZCI6NDc4OSwiaWF0IjoxNzUzNzk1NzA1fQ.m2LCYXXGRYZPfwE3HG272TFz7xBIIwXj1wWNDXJ0V_w';
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkMzE1ZGEwNC02MDRjLTRlMzUtODRmMS02NWMxNGIxOTU0MjUiLCJpZCI6NDc4OSwiaWF0IjoxNzYwNzA2Mjk0fQ.YDcSvLN-n6H1k2fQhsZuuWaRB1GNcDa7IQW7z-bfDOM';
     var viewer = new Cesium.Viewer('cesiumContainer', {
-        terrain: Cesium.Terrain.fromWorldTerrain(),
-        requestRenderMode: true
-
-    //   animation: false,
-    //   baseLayerPicker: false,
-    //   fullscreenButton: true,
-    //   vrButton: false,
-    //   geocoder: true,
-    //   homeButton: false,
-    //   infoBox: true,
-    //   selectionIndicator: true,
-    //   timeline: false,
-    //   shadows: false,
-    //   navigationHelpButton: false,
-    //   navigationInstructionsInitiallyVisible: true,
-    //   scene3DOnly: true,
-    //   geocoder: false,
-    //   shouldAnimate: true,
-    //   baseLayer: new Cesium.ImageryLayer(new Cesium.UrlTemplateImageryProvider({
-    //       url: "https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0/grijs/EPSG:3857/{z}/{x}/{y}.png",
-    //       maximumLevel: 19,
-    //   }))
-    });
-
-    viewer.scene.globe.baseColor = Cesium.Color.WHITE; 
-    // viewer.debugShowBoundingVolume = true;
-    viewer.scene.globe.depthTestAgainstTerrain=true;
-
-    const tileset = await Cesium.Cesium3DTileset.fromUrl(
-      "tileset.json"
-    );  
-    //var translation = new Cesium.Cartesian3(0, 0, 10); 
-    //var modelMatrix = Cesium.Matrix4.fromTranslation(translation);
-    //tileset.modelMatrix = modelMatrix;
-
-    viewer.scene.primitives.add(tileset);
-
-//     tileset.style = new Cesium.Cesium3DTileStyle({
-//   color: {
-//     conditions: [
-//       ["true", "color('rgba(0, 0, 255, 0.2)')"] // blauw met 50% transparantie
-//     ]
-//   }
-// });
-
-
-    viewer.scene.globe.depthTestAgainstTerrain = true;
-    viewer.scene.globe.enableLighting = false;
-    viewer.scene.highDynamicRange = false;
-    viewer.zoomTo(tileset, new Cesium.HeadingPitchRange(0, -0.5, 0));
-    tileset.debugShowBoundingVolume = true;
-
-    var handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
-handler.setInputAction(function (event) {
-  var ray = viewer.camera.getPickRay(event.endPosition);
-    var mousePosition = viewer.scene.globe.pick(ray, viewer.scene);
-    if (Cesium.defined(mousePosition)) {
-        var cartographic = Cesium.Cartographic.fromCartesian(mousePosition);
-        var latitudeString = Cesium.Math.toDegrees(cartographic.latitude).toFixed(3);
-        var longitudeString = Cesium.Math.toDegrees(cartographic.longitude).toFixed(3);
-        var heightString = cartographic.height.toFixed(2);
-        var lhtext =
-            `Lat: ${(latitudeString).slice(-8)}, Lon: ${(longitudeString).slice(-8)}, Alt: ${(heightString).slice(-7)}`;
-
-        console.log(lhtext);
-    }
-}, Cesium.ScreenSpaceEventType.MOUSE_MOVE);25832
-
-    const normalColor = Cesium.Color.WHITE;
-   let currentColor = Cesium.Color.YELLOW;
+      terrain: Cesium.Terrain.fromWorldTerrain(),
+      requestRenderMode: true,
+   });
+  viewer.scene.globe.depthTestAgainstTerrain=true;
+  viewer.scene.debugShowFramesPerSecond = true
+  const normalColor = Cesium.Color.WHITE;
+  let currentColor = Cesium.Color.YELLOW;
 
 // 3D Tileset highlighting
 const highlighted = {
   feature: undefined,
   originalColor: new Cesium.Color(),
 };
+
+
+// viewer.scene.light = new Cesium.DirectionalLight({
+//   direction: viewer.scene.camera.directionWC,
+// });
+// viewer.scene.preRender.addEventListener(function (scene, time) {
+//   viewer.scene.light.direction = Cesium.Cartesian3.clone(
+//     viewer.scene.camera.directionWC,
+//     viewer.scene.light.direction
+//   );
+// });
+
+// viewer.scene.fxaa = false;
+//viewer.scene.postProcessStages.fxaa.enabled = false;
+// viewer.scene.requestRenderMode = true;
+//viewer.scene.maximumRenderTimeChange = Infinity; // Render alleen bij veranderingen
+
+const tileset = await Cesium.Cesium3DTileset.fromUrl(
+      "tileset.json"
+    );
+tileset.debugShowBoundingVolume = true;
+
+// Pas de transformatie toe
+// tileset.modelMatrix = transform;
+    viewer.scene.primitives.add(tileset);
+    viewer.scene.globe.depthTestAgainstTerrain = true;
+    viewer.scene.globe.enableLighting = true;
+    viewer.scene.highDynamicRange = true;
+    viewer.zoomTo(tileset, new Cesium.HeadingPitchRange(0, -0.5, 0));
 
     // Color a feature yellow on hover.
 viewer.screenSpaceEventHandler.setInputAction(function onMouseMove(
@@ -127,6 +95,10 @@ viewer.screenSpaceEventHandler.setInputAction(function onMouseMove(
   }
 },
 Cesium.ScreenSpaceEventType.MOUSE_MOVE);
+
+const geoJsonUrl = 'blocs.geojson';
+
+
   </script>
 </body>
 </html>

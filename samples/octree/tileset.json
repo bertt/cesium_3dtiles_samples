@@ -1,47 +1,44 @@
 {
   "asset": {
-    "generator": "pg2b3dm 2.21.0.0",
+    "generator": "",
     "version": "1.1"
   },
-  "geometricError": 2000.0,
+  "geometricError": 2000,
   "root": {
     "transform": [
-      1.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      1.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      1.0,
-      0.0,
-      3932794.25,
-      316347.9375,
-      4994553.5,
-      1.0
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+3932794.25, 316347.9375,4994553.5,
+      1
     ],
-    "geometricError": 2000.0,
+    "geometricError": 2000,
     "refine": "ADD",
     "boundingVolume": {
       "region": [
-        0.08025675163289678,
-        0.9054667477295618,
-        0.08027507734616517,
-        0.9054786833273178,
-        38.478996581218055,
-        52.67196353858528
+        0.08025677,
+        0.9054668,
+        0.08027506,
+        0.90547866,
+        38.478996,
+        52.671963
       ]
     },
     "content": {
       "uri": "content/{level}_{z}_{x}_{y}.glb"
     },
     "implicitTiling": {
-      "availableLevels": 99999, 
       "subdivisionScheme": "OCTREE",
-      "subtreeLevels": 4,
+      "subtreeLevels": 3,
       "subtrees": {
         "uri": "subtrees/{level}_{z}_{x}_{y}.subtree"
       }
