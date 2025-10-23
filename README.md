@@ -4,7 +4,7 @@
 
 Octree subdivision
 
-<img width="680" height="364" alt="image" src="https://github.com/user-attachments/assets/bd3b6de4-330f-405c-8af7-9411aadf02a2" />
+<img width="1786" height="647" alt="image" src="https://github.com/user-attachments/assets/84df8ed2-38c3-4f1a-a1f5-1028cb4017d9" />
 
 https://bertt.github.io/cesium_3dtiles_samples/samples/octree/
 
