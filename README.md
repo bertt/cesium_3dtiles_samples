@@ -2,6 +2,12 @@
 
 ## 3D Tiles 1.1 samples:
 
+Octree subdivision Lyon buildings
+
+<img width="680" height="386" alt="image" src="https://github.com/user-attachments/assets/f999be4e-7772-46de-bb24-326ff6f38c62" />
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/octree_lyon/
+
 Octree subdivision
 
 <img width="1786" height="647" alt="image" src="https://github.com/user-attachments/assets/84df8ed2-38c3-4f1a-a1f5-1028cb4017d9" />
