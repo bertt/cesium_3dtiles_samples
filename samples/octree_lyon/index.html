@@ -63,7 +63,10 @@ const highlighted = {
 const tileset = await Cesium.Cesium3DTileset.fromUrl(
       "tileset.json"
     );
-tileset.debugShowBoundingVolume = true;
+
+tileset.debugColorizeTiles = true;
+// tileset.debugShowBoundingVolume = true;
+tileset.debugShowContentBoundingVolume = true;
 
 // Pas de transformatie toe
 // tileset.modelMatrix = transform;
