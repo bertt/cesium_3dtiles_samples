@@ -1,0 +1,104 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.135/Build/Cesium/Cesium.js"></script>
+  <link href= "https://cesium.com/downloads/cesiumjs/releases/1.135/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+  
+    <style>
+      html, body, #cesiumContainer {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .toolbar-left {
+            display: block;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+
+  </style>
+</head>
+<body>
+  <div id="cesiumContainer"></div>
+  <script type="module">
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkMzE1ZGEwNC02MDRjLTRlMzUtODRmMS02NWMxNGIxOTU0MjUiLCJpZCI6NDc4OSwiaWF0IjoxNzYwNzA2Mjk0fQ.YDcSvLN-n6H1k2fQhsZuuWaRB1GNcDa7IQW7z-bfDOM';
+    var viewer = new Cesium.Viewer('cesiumContainer', {
+      terrain: Cesium.Terrain.fromWorldTerrain(),
+      requestRenderMode: true,
+   });
+  viewer.scene.globe.depthTestAgainstTerrain=true;
+  viewer.scene.debugShowFramesPerSecond = true
+  const normalColor = Cesium.Color.WHITE;
+  let currentColor = Cesium.Color.YELLOW;
+
+// 3D Tileset highlighting
+const highlighted = {
+  feature: undefined,
+  originalColor: new Cesium.Color(),
+};
+
+
+// viewer.scene.light = new Cesium.DirectionalLight({
+//   direction: viewer.scene.camera.directionWC,
+// });
+// viewer.scene.preRender.addEventListener(function (scene, time) {
+//   viewer.scene.light.direction = Cesium.Cartesian3.clone(
+//     viewer.scene.camera.directionWC,
+//     viewer.scene.light.direction
+//   );
+// });
+
+// viewer.scene.fxaa = false;
+//viewer.scene.postProcessStages.fxaa.enabled = false;
+// viewer.scene.requestRenderMode = true;
+//viewer.scene.maximumRenderTimeChange = Infinity; // Render alleen bij veranderingen
+
+const tileset = await Cesium.Cesium3DTileset.fromUrl(
+      "tileset.json"
+    );
+tileset.debugShowBoundingVolume = true;
+
+// Pas de transformatie toe
+// tileset.modelMatrix = transform;
+    viewer.scene.primitives.add(tileset);
+    viewer.scene.globe.depthTestAgainstTerrain = true;
+    viewer.scene.globe.enableLighting = true;
+    viewer.scene.highDynamicRange = true;
+    viewer.zoomTo(tileset, new Cesium.HeadingPitchRange(0, -0.5, 0));
+
+    // Color a feature yellow on hover.
+viewer.screenSpaceEventHandler.setInputAction(function onMouseMove(
+  movement
+) {
+  // If a feature was previously highlighted, undo the highlight
+  if (Cesium.defined(highlighted.feature)) {
+    highlighted.feature.color = highlighted.originalColor;
+    highlighted.feature = undefined;
+  }
+  // Pick a new feature
+  const pickedFeature = viewer.scene.pick(movement.endPosition);
+  // Highlight the feature if it's not already selected.
+  if (pickedFeature instanceof Cesium.Cesium3DTileFeature) {
+    highlighted.feature = pickedFeature;
+    Cesium.Color.clone(
+      pickedFeature.color,
+      highlighted.originalColor
+    );
+    pickedFeature.color = currentColor;
+  }
+},
+Cesium.ScreenSpaceEventType.MOUSE_MOVE);
+
+const geoJsonUrl = 'blocs.geojson';
+
+
+  </script>
+</body>
+</html>
