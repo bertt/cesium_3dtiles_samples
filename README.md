@@ -12,7 +12,7 @@ Octree subdivision
 
 <img width="1786" height="647" alt="image" src="https://github.com/user-attachments/assets/84df8ed2-38c3-4f1a-a1f5-1028cb4017d9" />
 
-https://bertt.github.io/cesium_3dtiles_samples/samples/octree/
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/kievitsweg_octree
 
 Bordeaux textured autocad 3DS model
 
