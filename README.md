@@ -2,6 +2,12 @@
 
 ## 3D Tiles 1.1 samples:
 
+Ingolstadt CityGML -> 3DCityDB -> 3D Tiles with shaders
+
+<img width="1412" height="744" alt="image" src="https://github.com/user-attachments/assets/b4a1a28d-cf1c-4486-bb07-09e39473d83d" />
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/3dcitydb_shaders_ingolstadt
+
 Octree subdivision Lyon buildings
 
 <img width="680" height="386" alt="image" src="https://github.com/user-attachments/assets/f999be4e-7772-46de-bb24-326ff6f38c62" />
