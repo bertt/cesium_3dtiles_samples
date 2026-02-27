@@ -2,6 +2,12 @@
 
 ## 3D Tiles 1.1 samples:
 
+Delfshaven textured 3D Tiles (exported from3DCityDB V5) 
+
+![textured_delfshaveb](https://github.com/user-attachments/assets/a008a1af-d35d-4745-8f49-d75c76dea390)
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/3dcitydb_textures_delfshaven/
+
 Ingolstadt CityGML -> 3DCityDB -> 3D Tiles with shaders
 
 <img width="1412" height="744" alt="image" src="https://github.com/user-attachments/assets/b4a1a28d-cf1c-4486-bb07-09e39473d83d" />
