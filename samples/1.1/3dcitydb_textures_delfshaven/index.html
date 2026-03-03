@@ -31,8 +31,11 @@
     Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkMzE1ZGEwNC02MDRjLTRlMzUtODRmMS02NWMxNGIxOTU0MjUiLCJpZCI6NDc4OSwiaWF0IjoxNzYwNzA2Mjk0fQ.YDcSvLN-n6H1k2fQhsZuuWaRB1GNcDa7IQW7z-bfDOM';
     var viewer = new Cesium.Viewer('cesiumContainer', {
       terrain: Cesium.Terrain.fromWorldTerrain(),
-      requestRenderMode: true,
-   });
+      requestRenderMode: false,
+    timeline: false,
+    animation: false   // (optioneel) verwijdert ook het klokje links
+    });
+
 
   // const terr = await Cesium.CesiumTerrainProvider.fromUrl("https://web3d.basemap.de/cesium/dgm5-mesh/")
   // viewer.terrainProvider=terr;
@@ -69,12 +72,11 @@ const tileset = await Cesium.Cesium3DTileset.fromUrl(
 tileset.debugShowBoundingVolume = true;
 //tileset.modelMatrix = Cesium.Matrix4.fromTranslation(new Cesium.Cartesian3(0, 0, 55));
 
-
 // Pas de transformatie toe
 // tileset.modelMatrix = transform;
     viewer.scene.primitives.add(tileset);
     viewer.scene.globe.depthTestAgainstTerrain = true;
-    viewer.scene.globe.enableLighting = true;
+    // viewer.scene.globe.enableLighting = false;
     viewer.scene.highDynamicRange = true;
     viewer.zoomTo(tileset, new Cesium.HeadingPitchRange(0, -0.5, 0));
 
