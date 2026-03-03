@@ -61,10 +61,10 @@ const highlighted = {
 //   );
 // });
 
-// viewer.scene.fxaa = false;
+//viewer.scene.fxaa = false;
 //viewer.scene.postProcessStages.fxaa.enabled = false;
 // viewer.scene.requestRenderMode = true;
-//viewer.scene.maximumRenderTimeChange = Infinity; // Render alleen bij veranderingen
+// viewer.scene.maximumRenderTimeChange = Infinity; // Render alleen bij veranderingen
 
 const tileset = await Cesium.Cesium3DTileset.fromUrl(
       "tileset.json"
@@ -77,8 +77,12 @@ tileset.debugShowBoundingVolume = true;
     viewer.scene.primitives.add(tileset);
     viewer.scene.globe.depthTestAgainstTerrain = true;
     // viewer.scene.globe.enableLighting = false;
-    viewer.scene.highDynamicRange = true;
+    // viewer.scene.highDynamicRange = true;
     viewer.zoomTo(tileset, new Cesium.HeadingPitchRange(0, -0.5, 0));
+
+
+    tileset.modelMatrix = Cesium.Matrix4.fromTranslation(new Cesium.Cartesian3(0, 0, 8));
+
 
     // Color a feature yellow on hover.
 viewer.screenSpaceEventHandler.setInputAction(function onMouseMove(
