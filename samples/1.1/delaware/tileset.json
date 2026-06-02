@@ -18,5 +18,9 @@
     "children" : [
       
     ]
+  },
+  "asset": {
+    "generator": "pg2b3dm 2.2.1.0",
+    "version": "1.1"
   }
 }
