@@ -2,6 +2,12 @@
 
 ## 3D Tiles 1.1 samples:
 
+3D Bag multiple feature id EXT_Mesh_Features sets:
+
+<img width="1055" height="606" alt="3dtiles_multiple_feature_ids" src="https://github.com/user-attachments/assets/8558d931-7b4a-4353-8bfe-0892c6310c25" />
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/3dbag_mulitplefeatureids/
+
 Delfshaven textured 3D Tiles (exported from3DCityDB V5) 
 
 ![textured_delfshaveb](https://github.com/user-attachments/assets/a008a1af-d35d-4745-8f49-d75c76dea390)
