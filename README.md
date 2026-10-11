@@ -2,6 +2,20 @@
 
 ## 3D Tiles 1.1 samples:
 
+3DCityDB with multiple appearances (sample dataset see https://github.com/Geodan/pg2b3dm/pull/259#issuecomment-5889217957):
+
+Aerial: 
+
+<img width="812" height="557" alt="image" src="https://github.com/user-attachments/assets/27f4f83d-80b7-4336-bc6e-39a4429d805a" />
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/3dcitydb_multipletextures/aerial
+
+Irradiation:
+
+<img width="939" height="637" alt="image" src="https://github.com/user-attachments/assets/ed3ca265-5bd7-472e-b242-6c9b4f95b013" />
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/1.1/3dcitydb_multipletextures/irradiation
+
 3D Bag multiple feature id EXT_Mesh_Features sets:
 
 <img width="1055" height="606" alt="3dtiles_multiple_feature_ids" src="https://github.com/user-attachments/assets/8558d931-7b4a-4353-8bfe-0892c6310c25" />
