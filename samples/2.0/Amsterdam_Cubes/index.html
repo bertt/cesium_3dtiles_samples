@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>3DTILES_tileset - Dam, Amsterdam</title>
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.146/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.146/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+  <style>
+    html, body, #cesiumContainer { width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden; font-family: sans-serif; }
+    #panel { position: absolute; top: 10px; left: 10px; background: rgba(30, 30, 30, 0.85); color: #eee; padding: 10px 14px; border-radius: 4px; font-size: 13px; }
+    #panel h3 { margin: 0 0 8px 0; font-size: 15px; }
+    #panel label { display: block; margin: 6px 0; }
+    #info { margin-top: 10px; padding-top: 8px; border-top: 1px solid #666; font-family: monospace; white-space: pre; }
+    #feature { margin-top: 10px; padding-top: 8px; border-top: 1px solid #666; font-family: monospace; white-space: pre; }
+    #error { color: #f88; }
+  </style>
+</head>
+<body>
+  <div id="cesiumContainer"></div>
+  <div id="panel">
+    <h3>3DTILES_tileset &ndash; Dam, Amsterdam</h3>
+    <label><input id="region" type="checkbox"> Show bounding region</label>
+    <div id="info">Loading...</div>
+    <div id="feature">Click a cube to query its attributes</div>
+    <div id="error"></div>
+  </div>
+
+<script>
+// CesiumJS has no loader for the glTF 2.1 based 3DTILES_tileset yet. This page reads root.tileset.gltf, the subtree and the
+// content glb itself and draws the content as a Cesium model, placed with the EXT_georeference extension of the content.
+
+const viewer = new Cesium.Viewer("cesiumContainer", {
+  baseLayer: new Cesium.ImageryLayer(new Cesium.UrlTemplateImageryProvider({
+    url: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    maximumLevel: 19,
+    credit: "© OpenStreetMap contributors",
+  })),
+  baseLayerPicker: false,
+  geocoder: false,
+  homeButton: false,
+  navigationHelpButton: false,
+  sceneModePicker: false,
+  animation: false,
+  timeline: false,
+});
+
+const fill = (template, values) => template.replace(/\{(\w+)\}/g, (_, k) => values[k]);
+
+async function fetchJson(url) {
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`${url}: ${response.status}`);
+  return response.json();
+}
+
+// the json chunk of a glb
+function readGlbJson(buffer) {
+  const view = new DataView(buffer);
+  const jsonLength = view.getUint32(12, true);
+  return JSON.parse(new TextDecoder().decode(new Uint8Array(buffer, 20, jsonLength)));
+}
+
+// availability of an element of the subtree: a constant or a bit of a bitstream stored in a buffer view
+async function isAvailable(subtreeUrl, subtreeGltf, availability, index) {
+  if (availability.constant !== undefined) return availability.constant === 1;
+
+  const bufferView = subtreeGltf.bufferViews[availability.bitstream];
+  const buffer = subtreeGltf.buffers[bufferView.buffer];
+  const bytes = new Uint8Array(await (await fetch(new URL(buffer.uri, new URL(subtreeUrl, location.href)))).arrayBuffer());
+  return ((bytes[(bufferView.byteOffset ?? 0) + (index >> 3)] >> (index & 7)) & 1) === 1;
+}
+
+async function load() {
+  const tileset = await fetchJson("root.tileset.gltf");
+  const node = tileset.nodes[tileset.scenes[tileset.scene ?? 0].nodes[0]];
+  const implicit = node.extensions["3DTILES_implicit_tiling"];
+  const wkid = tileset.extensions?.["EXT_geospatial_crs"]?.extensions?.["EXT_geospatial_crs_wkid"];
+  const shape = tileset.shapes[node.boundingVolume.shape];
+  const region = shape.extensions?.["3DTILES_shape_ellipsoid_region"];
+
+  if (wkid?.authority !== "EPSG" || wkid?.wkid !== 4979) throw new Error("Only EPSG:4979 (WGS84) is supported by this viewer");
+  if (shape.type !== "ellipsoid region") throw new Error("Only ellipsoid region bounding volumes are supported by this viewer");
+  if (implicit.subdivisionScheme !== "QUADTREE" || implicit.availableLevels !== 2 || implicit.subtreeLevels !== 2) {
+    throw new Error("Only a QUADTREE with 2 available levels in one subtree is supported by this viewer");
+  }
+
+  // the level 1 tiles are bits 1-4 of the root subtree, in Morton order (x is bit 0, y is bit 1)
+  const subtreeUrl = fill(implicit.subtreeUri, { level: 0, longitude: 0, latitude: 0 });
+  const subtreeGltf = await fetchJson(subtreeUrl);
+  const subtree = subtreeGltf.extensions["3DTILES_subtree"];
+
+  const flip = Cesium.Matrix4.fromRotationTranslation(Cesium.Matrix3.fromRotationZ(Math.PI));
+  const loaded = [];
+  for (let y = 0; y < 2; y++) {
+    for (let x = 0; x < 2; x++) {
+      const index = 1 + (x | (y << 1));
+      const tileAvailable = await isAvailable(subtreeUrl, subtreeGltf, subtree.tileAvailability, index);
+      const contentAvailable = await isAvailable(subtreeUrl, subtreeGltf, subtree.contentAvailability, index);
+      if (!tileAvailable || !contentAvailable) continue;
+
+      const contentUrl = fill(implicit.contentUri, { level: 1, longitude: x, latitude: y });
+      const buffer = await (await fetch(contentUrl)).arrayBuffer();
+      const georef = readGlbJson(buffer).nodes.map(n => n.extensions?.["EXT_georeference"]).find(g => g);
+      if (!georef) throw new Error(`${contentUrl} has no EXT_georeference`);
+
+      // EXT_georeference: local -x faces east, +y up and +z north. Cesium converts the y-up glTF to z-up (x east, y -z north),
+      // so the east-north-up frame at the location, rotated 180 degrees around up, is the model matrix.
+      const position = Cesium.Cartesian3.fromDegrees(georef.longitude, georef.latitude, georef.height ?? 0);
+      const enu = Cesium.Transforms.eastNorthUpToFixedFrame(position);
+      const model = await Cesium.Model.fromGltfAsync({
+        url: contentUrl, // let Cesium load the glb itself, so that every tile has its own cache key (and metadata)
+        modelMatrix: Cesium.Matrix4.multiply(enu, flip, new Cesium.Matrix4()),
+      });
+      viewer.scene.primitives.add(model);
+      loaded.push(contentUrl);
+    }
+  }
+  if (loaded.length === 0) throw new Error("No tile has content");
+
+  const center = Cesium.Rectangle.center(new Cesium.Rectangle(region.minimumLongitude, region.minimumLatitude, region.maximumLongitude, region.maximumLatitude));
+  const position = Cesium.Cartesian3.fromRadians(center.longitude, center.latitude, 0);
+  const rectangle = new Cesium.Rectangle(region.minimumLongitude, region.minimumLatitude, region.maximumLongitude, region.maximumLatitude);
+  const regionEntity = viewer.entities.add({
+    show: document.getElementById("region").checked,
+    rectangle: {
+      coordinates: rectangle,
+      height: region.minimumHeight,
+      extrudedHeight: region.maximumHeight,
+      fill: false,
+      outline: true,
+      outlineColor: Cesium.Color.WHITE,
+    },
+  });
+  document.getElementById("region").addEventListener("change", e => { regionEntity.show = e.target.checked; });
+
+  document.getElementById("info").textContent =
+    `Content: ${loaded.join("\n         ")}\nCRS: ${wkid.authority}:${wkid.wkid}`;
+
+  // EXT_mesh_features + EXT_structural_metadata of the content: the clicked feature has the properties of its property table row
+  const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+  handler.setInputAction(click => {
+    const picked = viewer.scene.pick(click.position);
+    const el = document.getElementById("feature");
+    if (picked instanceof Cesium.ModelFeature) {
+      el.textContent = picked.getPropertyIds().map(id => `${id}: ${picked.getProperty(id)}`).join("\n") || "The feature has no properties";
+    } else {
+      el.textContent = "Click a cube to query its attributes";
+    }
+  }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+
+  viewer.camera.lookAt(position, new Cesium.HeadingPitchRange(Cesium.Math.toRadians(30), Cesium.Math.toRadians(-30), 300));
+  viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
+}
+
+load().catch(e => { document.getElementById("error").textContent = String(e); console.error(e); });
+</script>
+</body>
+</html>

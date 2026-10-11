@@ -1,0 +1,26 @@
+{
+  "extensions": {
+    "3DTILES_subtree": {
+      "childSubtreeAvailability": {
+        "constant": 0
+      },
+      "contentAvailability": {
+        "constant": 1
+      },
+      "tileAvailability": {
+        "constant": 1
+      }
+    }
+  },
+  "asset": {
+    "copyright": "",
+    "generator": "SharpGLTF 1.0.0\u002B6e65caa73634d0c1a28689cc7fdfab62811a0ec1",
+    "version": "2.1"
+  },
+  "extensionsUsed": [
+    "3DTILES_subtree"
+  ],
+  "extensionsRequired": [
+    "3DTILES_subtree"
+  ]
+}

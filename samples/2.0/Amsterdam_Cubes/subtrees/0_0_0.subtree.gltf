@@ -1,0 +1,45 @@
+{
+  "extensions": {
+    "3DTILES_subtree": {
+      "childSubtreeAvailability": {
+        "constant": 0
+      },
+      "contentAvailability": {
+        "availableCount": 4,
+        "bitstream": 1
+      },
+      "tileAvailability": {
+        "availableCount": 5,
+        "bitstream": 0
+      }
+    }
+  },
+  "asset": {
+    "copyright": "",
+    "generator": "SharpGLTF 1.0.0\u002B6e65caa73634d0c1a28689cc7fdfab62811a0ec1",
+    "version": "2.1"
+  },
+  "extensionsUsed": [
+    "3DTILES_subtree"
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1,
+      "byteOffset": 4
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 8,
+      "uri": "0_0_0.subtree.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "3DTILES_subtree"
+  ]
+}

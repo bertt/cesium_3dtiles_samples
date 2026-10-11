@@ -1,0 +1,78 @@
+{
+  "extensions": {
+    "3DTILES_tileset": {
+      "geometricError": 2000
+    },
+    "EXT_geospatial_crs": {
+      "extensions": {
+        "EXT_geospatial_crs_wkid": {
+          "authority": "EPSG",
+          "wkid": 4979
+        }
+      },
+      "format": "wkid"
+    }
+  },
+  "asset": {
+    "copyright": "",
+    "generator": "SharpGLTF 1.0.0\u002B6e65caa73634d0c1a28689cc7fdfab62811a0ec1",
+    "version": "2.1"
+  },
+  "extensionsUsed": [
+    "3DTILES_tileset",
+    "EXT_geospatial_crs",
+    "EXT_geospatial_crs_wkid",
+    "3DTILES_implicit_tiling",
+    "3DTILES_shape_ellipsoid_region"
+  ],
+  "nodes": [
+    {
+      "extensions": {
+        "3DTILES_tileset": {
+          "geometricError": 2000,
+          "refine": "ADD"
+        },
+        "3DTILES_implicit_tiling": {
+          "availableLevels": 2,
+          "contentUri": "content/{level}_{longitude}_{latitude}.glb",
+          "subdivisionScheme": "QUADTREE",
+          "subtreeLevels": 2,
+          "subtreeUri": "subtrees/{level}_{longitude}_{latitude}.subtree.gltf"
+        }
+      },
+      "name": "root",
+      "boundingVolume": {
+        "shape": 0
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "name": "default",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "extensionsRequired": [
+    "3DTILES_tileset",
+    "3DTILES_implicit_tiling",
+    "3DTILES_shape_ellipsoid_region"
+  ],
+  "shapes": [
+    {
+      "type": "ellipsoid region",
+      "extensions": {
+        "3DTILES_shape_ellipsoid_region": {
+          "minimumHeight": 0,
+          "maximumHeight": 40,
+          "minimumLongitude": 0.08539265991798367,
+          "maximumLongitude": 0.08542341210640214,
+          "minimumLatitude": 0.914073972597111,
+          "maximumLatitude": 0.914092794487074
+        }
+      }
+    }
+  ],
+  "scene": 0
+}
