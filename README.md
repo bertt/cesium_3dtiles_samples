@@ -1,5 +1,11 @@
 # cesium_samples
 
+## 3D Tiles 2.0 samples:
+
+<img width="1912" height="1072" alt="image" src="https://github.com/user-attachments/assets/7603d576-2e04-4687-9dd1-c9300943977e" />
+
+https://bertt.github.io/cesium_3dtiles_samples/samples/2.0/Amsterdam_Voxels
+
 ## 3D Tiles 1.1 samples:
 
 3DCityDB with multiple appearances (sample dataset see https://github.com/Geodan/pg2b3dm/pull/259#issuecomment-5889217957):
